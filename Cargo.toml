@@ -1,0 +1,24 @@
+[package]
+name = "playwith"
+version = "0.1.0"
+authors = ["Kyle Clemens <me@kyleclemens.com>"]
+
+[dependencies]
+rusty_alfred = "0.1"
+hyper = "0.9"
+error-chain = "0.5"
+xmltree = "0.3"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+rust-crypto = "0.2"
+time = "0.1"
+clippy = "0.0.98"
+dotenv = {version = "0.8", optional = true}
+
+[dev-dependencies]
+dotenv = "0.8"
+
+[features]
+default = []
+env = ["dotenv"]
