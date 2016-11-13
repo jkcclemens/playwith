@@ -31,8 +31,6 @@ fn main() {
     println!("{}", build_error("no arguments").unwrap());
     return;
   }
-  println!("api_key: {}", api_key);
-  println!("args: {:#?}", args);
   let args: Vec<String> = args[0].split(' ').map(|x| x.to_owned()).collect();
   let profiles: Result<Vec<Profile>> = args.iter()
     .map(|x| {
